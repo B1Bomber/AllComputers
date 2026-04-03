@@ -4,33 +4,26 @@
         <meta charset = "UTF-8">
         <link rel = "icon" href = "">
         <link rel="stylesheet" href="../templates/content-template.css">
-        <title>Preface</title>
+        <title>Write Here</title>
     </head>
     <body>
-        <div id="content">
-            <!--
-                Write Here
-            -->
-            <h1>
-                Preface
-            </h1>
-            <p>
-                The goal of this book is for the reader to learn everything about modern computers. 
-                A caveman who recently learned English should be able to use this book as a reference to build a computer similar to one made in 2000. 
-                This book was inspired by HTME.
-            </p>
-        </div>
-
-        <!--
-            Pages container (hidden initially)
-        -->
-        <div class="pages">
-            <button class="nav-btn" id="previous">&#8592;</button>
-            <button class="nav-btn" id="next">&#8594;</button>
-            <!--
-                Pages will be injected here by JS page parser
-            -->
-        </div>
+        <article id="main-grid">
+            <button class="nav-button" id="previous">&#8592;</button>
+            <section id="content">
+                <!--
+                    Write Here
+                -->
+                     <h1>
+                    Preface
+                </h1>
+                <p>
+                    The goal of this book is for the reader to learn everything about modern computers. 
+                    A caveman who recently learned English should be able to use this book as a reference to build a computer similar to one made in 2000. 
+                    This book was inspired by HTME.
+                </p>
+            </section>
+            <button class="nav-button" id="next">&#8594;</button>
+        </article>
         <script src="../page-parser.js"></script> 
     </body>
 </html>
